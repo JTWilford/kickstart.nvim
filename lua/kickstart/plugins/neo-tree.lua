@@ -11,14 +11,14 @@ return {
   },
   cmd = 'Neotree',
   keys = {
-    { '\\', ':Neotree reveal<CR>', { desc = 'NeoTree reveal' } },
+    { '\\', ':Neotree toggle reveal<CR>', { desc = 'NeoTree reveal' } },
+    { '|', ':Neotree buffers float reveal<CR>', { desc = 'NeoTree Buffers' } },
+    { '<leader>ng', ':Neotree git_status float reveal<CR>', { desc = 'NeoTree Git Status' } },
   },
   opts = {
     filesystem = {
       window = {
-        mappings = {
-          ['\\'] = 'close_window',
-        },
+        mappings = {},
       },
     },
   },
